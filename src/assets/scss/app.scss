@@ -48,3 +48,35 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+#main-header {
+	margin:10vh 0 0;
+	font-size:8em;
+	font-weight:bold;
+	color: rgba(255, 255, 255, 0.7);
+	letter-spacing:-0.02em;
+	text-shadow:0 3px 4px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
