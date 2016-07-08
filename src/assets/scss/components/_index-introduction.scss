@@ -1,0 +1,32 @@
+// Introduction section styles
+
+#introTitle {
+	margin-top:120px;
+	margin-bottom:80px;
+	border-top:solid 1px #000;
+
+	#titleWrap {
+		margin-top:-28px;
+		background-color:#fff;
+	}
+
+	h2 {
+		color: #19466a;
+		font-style: italic;
+		text-align: center;
+	}
+}
+
+#theBasics h3 {
+	margin-top:-24px;
+	text-align: center;
+	background:#fff; 
+	font-weight: bold;
+	z-index:999;
+}
+
+.intro-container {
+	border: solid 1px #676767;
+	margin-bottom:40px;
+	z-index: 80;
+}
