@@ -2,32 +2,35 @@
 .video-back-wrap {
 	position: relative;
 	width: 100%; 
-  	height: 100%;
+  	height: 94%;
 
   	h1 {
   		font-family: "jaf-facitweb",sans-serif;
-		margin:10vh 0 0 100px;
+		margin:10vh 0 0 70px;
 		font-size: 7.4em;
 		font-weight:bold;
 		color: rgba(255, 255, 255, 0.7);
 		letter-spacing:-0.02em;
 		text-shadow:0 3px 4px rgba(0,0,0,0.16);
 		z-index:100;
+		opacity:0;
 	}
 
 	h3 {
 		font-family: "aaux-next",sans-serif;
-		margin:4vh 0 0 100px;
+		margin:4vh 0 0 70px;
 		font-size: 2em;
 		line-height: 1em;
 		font-style:italic;
 		color: rgba(225, 225, 225, 0.8);
 		text-shadow:0 2px 3px rgba(0,0,0,0.14);
 		z-index:100;
+		opacity:0;
 	}
 
 	.cover-buttons {
-		margin:200px auto 40px;
+		opacity: 0;
+		margin:20vh auto 10px;
 	}
 
 
@@ -99,3 +102,23 @@
 .btn-1:active {
   background: #ffd199;
 }
+
+.downarrow {
+	margin-top:9vh;
+
+	a {
+		text-align:center;
+		color: rgba(255,255,255,0.6);
+	}
+}
+
+.svgDownArrow {
+	display:table;
+	margin:0 auto;
+	width:48px;
+	height:40px;
+	color:#f6f6f6;
+}
+
+
+

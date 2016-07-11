@@ -1,5 +1,10 @@
 // Introduction section styles
 
+.intro-wrap {
+	background-color: #f6f6f6;
+	width: 100%;
+}
+
 #introTitle {
 	margin-top:120px;
 	margin-bottom:80px;
@@ -7,20 +12,26 @@
 
 	#titleWrap {
 		margin-top:-28px;
-		background-color:#fff;
+		background-color:#f6f6f6;
 	}
 
 	h2 {
+		font-family: "aaux-next",sans-serif;
+		font-size: 40px;
 		color: #19466a;
 		font-style: italic;
 		text-align: center;
 	}
 }
 
-#theBasics h3 {
-	margin-top:-24px;
+#intro-headings h3 {
+	font-size: 40px;
+	font-family: "jaf-facitweb",sans-serif;
+	color: #4d4d4d;
+	margin-top:-31px;
+	margin-bottom:24px;
 	text-align: center;
-	background:#fff; 
+	background:#f6f6f6; 
 	font-weight: bold;
 	z-index:999;
 }
@@ -30,3 +41,35 @@
 	margin-bottom:40px;
 	z-index: 80;
 }
+
+.row.intros {
+
+	svg {
+		display:table;
+		margin:0 auto;
+		max-width:180px;
+		max-height: 80px;
+	}
+
+	h2 {
+		font-family: "aaux-next",sans-serif;
+		font-size: 32px;
+		color: #19466a;
+		font-weight: bold;
+		font-style: italic;
+		text-align: center;
+		margin-bottom: 4px;
+	}
+
+	p {
+		font-family: "source-sans-pro",sans-serif;
+		font-weight: light;
+		text-align: center;
+		line-height: 18px;
+		margin-bottom: 36px;
+
+	}
+
+}
+
+
