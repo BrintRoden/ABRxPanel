@@ -37,6 +37,8 @@
 
 }
 
+.menu-toggle {width:30px; height: 30px; color:#e6e6e7; fill:#e6e6e7; stroke:#e6e6e7; position:fixed; top:10px; right:20px;}
+
 #video-background {
 	position: absolute;
 	margin-left: auto;
@@ -104,6 +106,7 @@
 }
 
 .downarrow {
+
 	margin-top:9vh;
 
 	a {
@@ -113,11 +116,24 @@
 }
 
 .svgDownArrow {
+	position: absolute;
+	bottom:13%;
+	left:50%;
 	display:table;
-	margin:0 auto;
+	margin-left:-24px;
 	width:48px;
 	height:40px;
 	color:#f6f6f6;
+}
+
+p.scroll-invite {
+	position: absolute;
+	color:#f6f6f6;
+	bottom:8%;
+	width:140px;
+	margin-left: -70px;
+	left:50%;
+	text-align:center;
 }
 
 
