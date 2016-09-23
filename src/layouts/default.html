@@ -6,9 +6,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <script src="https://use.typekit.net/ort6xxg.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>ABRx Panel by Diatherix</title>
+    <script type="text/javascript" src="//use.typekit.net/fbr3xww.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
@@ -16,6 +16,22 @@
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.equalizer.js"></script>
+
+    <!--
+    <script src="js/foundation/foundation.sticky.js"></script>
+    <script src="js/foundation/foundation.core.js"></script>
+
+  -->
+  
+    <!-- Other JS plugins can be included here -->
+
+    <script>
+      $(document).foundation();
+    </script>
 
     <script src="{{root}}assets/js/TweenMax.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
@@ -27,7 +43,7 @@
         TweenMax.to("#cover-header", 0.8, {opacity:1, marginLeft:"100px", delay:0.3, ease:Power2.easeOut});
         TweenMax.to("#cover-subhead", 0.8, {opacity:1, marginLeft:"100px", delay:0.4, ease:Power2.easeOut});
         TweenMax.staggerTo(".cover-buttons", 0.8, {opacity:1, marginLeft:"40px", delay:0.6, ease:Power2.easeOut});
-        TweenMax.fromTo(".svgDownArrow", 0.7, {bottom:"14%"}, {bottom:"13%", ease:Power1.easeInOut, repeat:-1, delay:7, yoyo:true});
+        TweenMax.fromTo(".svgDownArrow", 0.7, {bottom:"10%"}, {bottom:"9%", ease:Power1.easeInOut, repeat:-1, delay:7, yoyo:true});
 
       };
 

@@ -1,0 +1,36 @@
+.panelTeeUp {
+	margin-top:-25vh;
+	p {
+	font-size:18px;
+	font-style:italic;
+	color:#fff;
+	}
+}
+.panelTargets {
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	margin-top:-25vh;
+	z-index: 8000;
+	border-collapse:collapse;
+	border:none;
+	
+
+	thead {background-color:#81bc00; z-index:8400;border-collapse:collapse;
+	border:none;}
+	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:20px; line-height:22px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;}
+	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:19px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:6px 4px 3px; overflow-x:scroll; white-space: nowrap;}
+	td i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
+
+	.enzymeClass {vertical-align:top; font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; font-weight:bold;}
+	.enzymeClass.flo {background-color:#fff;}
+
+
+}
+
+.class {border-top-left-radius: 10px;}
+.avoidance {border-top-right-radius: 10px;}
+
+
+

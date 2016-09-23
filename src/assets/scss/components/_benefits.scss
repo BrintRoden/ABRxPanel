@@ -1,0 +1,123 @@
+
+
+
+.benefits-wrap {
+
+	background-color: #f6f6f6;
+	width: 100%;
+	padding-bottom:40px;
+
+}
+
+
+.card {
+	position: relative;
+	border: solid 0.5px #8ba5ac;
+
+	background:#fff;
+
+}
+
+
+.benefit {
+	font-family: "Myriad Pro", sans-serif;
+
+	.cardTitle {
+		float: left;
+  		font-weight: bold;
+  		font-size: 42px;
+		margin:36px 0 0 3.5%;
+		color:#414042;
+		width:57%;
+		letter-spacing:-0.01em;
+	}
+
+	img {
+		position: absolute;
+		float:right; 
+		width:30%; 
+		height:116px;
+		margin:20px 16px 0 0;
+	}
+
+	h4 {
+		float:left;
+		font-size: 18px;
+		color:#81bc00; 
+		font-style:italic;
+		margin:8px 0 14px 30px;
+	}
+
+	p {float:left; font-size:16px; color:#231f20; line-height:23px; margin:10px 3.5% 18px;}
+
+}
+
+
+
+
+.techResource {
+
+	.techTitle {
+		float: left;
+  		font-weight: bold;
+  		font-size: 27px;
+  		line-height:28px;
+		margin:28px 4px 12px 4px;
+		color:#81bc00;
+		width:100%;
+		letter-spacing:-0.01em;
+	}
+
+	h4 {
+		font-size: 16px;
+		font-weight:bold;
+		color:#929497; 
+		margin:0 0 10px 4px;
+		letter-spacing: 0.1em;
+	}
+
+	p {margin:0 4px 14px; font-size:16px; line-height:23px;}
+
+	img { display:block; margin:4px auto 12px; box-shadow:0 1px 2px #444;}
+
+}
+
+
+	.developed-by {
+
+		text-align:center;
+
+		.explainer {
+			margin-bottom:20px;
+			font-size: 20px;
+			line-height: 25px;
+			font-style:italic;
+			color:#65787d;
+		}
+
+		.visit-btn {
+			font-size: 18px;
+			font-weight: bold;
+			color:#fff;
+			background:#65787d;
+			border-radius:4px;
+			padding:14px 34px 11px;
+			margin: 20px 0 30px;
+		}
+
+		.visit-btn:hover {background:#55686d;}
+
+		.txt-lrn {
+			margin:20px 0 0;
+			font-style:italic;
+			color:#65787d;
+		}
+
+	}
+
+
+
+
+
+
+
