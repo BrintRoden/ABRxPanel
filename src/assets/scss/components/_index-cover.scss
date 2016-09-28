@@ -46,7 +46,8 @@
 		z-index:100;
 		opacity:1;
 
-		@include breakpoint (medium){padding-left:2vw; margin-left:100px; font-size: 6.5vw;}
+		@include breakpoint (medium){padding-left:1vw; margin-left:48px; font-size: 8vw;}
+		@include breakpoint (768px){padding-left:2vw; margin-left:100px; font-size: 6.5vw;}
 
 		span {font-weight:normal;}
 
@@ -71,6 +72,12 @@
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7df5e', endColorstr='#afda53',GradientType=1 );
 	
 		@include breakpoint (medium){
+			font-size: 4.5vw; 
+			margin:2vw 0 0 26vw;
+			padding:1.5vw 30px 0.7vw 80px;
+		}
+
+		@include breakpoint (768px){
 			font-size: 3.8vw; 
 			margin:2vw 0 0 26vw;
 			padding:0.8vw 30px 0 80px;
@@ -94,11 +101,19 @@
 		z-index:100;
 		opacity:1;
 
+		@include breakpoint (500px){
+			margin:6vh 0 0 5vw;
+			font-size: 3.8vh;
+			padding-left:3vh;
+		}
+
 		@include breakpoint (medium){
-			margin:6vh 0 0;
 			padding-left:6vw;
+			font-size: 4.4vh;
+		}
+
+		@include breakpoint (768px){
 			font-size: 4.6vh;
-			line-height: 1.2em;
 		}
 
 		i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
@@ -109,9 +124,15 @@
 		margin:6.5vh 0 0 8%;
 		color:#fff;
 
-		@include breakpoint (medium){margin:9.5vh 0 0 6vw;}
+		@include breakpoint (500px){margin:9vh 0 0 6vw;}
+		@include breakpoint (medium){margin:8vh 0 0 6vw;}
+		@include breakpoint (768px){margin:9.5vh 0 0 6vw;}
 
-		.magnifier-img {@include breakpoint (small only){width:44px; margin:7% 0 0 6%;}}
+		.magnifier-img {@include breakpoint (small only){width:44px; margin:7% 0 0 6%;}
+			@include breakpoint (500px){width:54px; margin:5% 0 0 7%;}
+			@include breakpoint (medium){width:68px; margin:0.7% 0 0 8%;}
+			@include breakpoint (768px){width:80px; margin:0 0 0 8%;}
+		}
 
 		img.magnifier {height:56px; float:right;}
 
@@ -127,6 +148,11 @@
 			z-index: 120;
 
 			@include breakpoint (medium){
+				font-size:18px; 
+				line-height:22px;
+				width:auto;
+			}
+			@include breakpoint (768px){
 				font-size:20px; 
 				line-height:24px;
 				width:auto;

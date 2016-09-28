@@ -23,31 +23,34 @@
 .top-bar {position: fixed; top:0; width:100%; background:rgba(255,255,255,0.96); padding:0; border-bottom: 0.5px solid rgba(0,0,0,0.25); z-index:9999;}
 
 .topTitle { 
-	margin:4px 0 1px 5vw; 
+	margin:4px 0 0 5vw; 
 	color:#231f20;
 	font-weight:bold; 
 	letter-spacing:-0.02em; 
-	font-size:22px; 
+	font-size:20px; 
 
-	@include breakpoint (medium){font-size:28px;}
+	@include breakpoint (medium){font-size:25px;}
+	@include breakpoint (768px){font-size:28px;}
 	
 }
 
-.topTitle-second {font-weight:normal; font-size:20px; margin:12px 2px 0 0; font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; letter-spacing:0.01em;
-	@include breakpoint (medium){font-size:24px;}
+.topTitle-second {font-weight:normal; font-size:18px; margin:12px 2px 0 0; font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; letter-spacing:0.01em;
+	@include breakpoint (medium){font-size:22px;}
+	@include breakpoint (768px){font-size:24px;}
 }
 .menu-icon-custom {
 	color:#504f52; 
 	float:right;
-	margin:12px 3px 0 0;
-	@include breakpoint(medium){margin:13px 3px 0 0; float:left;}
+	margin:9px 3px 0 0;
+	@include breakpoint(medium){margin:11px 3px 0 0; float:left;}
+	@include breakpoint(768px){margin:13px 3px 0 0;}
 
 
 	span {
-		margin:3px 5px 0 0;
+		margin:2px 4px 0 0;
 		float:left;
 		font-size:14px;
-		@include breakpoint (medium){font-size:16px;margin:1px 3px 0 0;}
+		@include breakpoint (medium){font-size:15px;margin:4px 3px 0 0;}
 
 	}
 
@@ -108,14 +111,21 @@
 
 	.requestInfo {background:#fff; margin-top:20px;}
 
+.reference-numbers { margin-top:-10px; font-size:14px; padding:0 20px 0 0; float:right; width:100%; text-align:right; @include breakpoint(medium){margin-top:0; font-size:16px;}}
+
 	.references {
 		width:100%; 
-		padding:24px;
+		padding:18px;
 		position: relative;
 
-		.ref-container {position:relative; width:770px; margin:10px auto;}
+		@include breakpoint (medium){padding:24px;}
 
-		p {font-size:13.5px; line-height:15.5px; margin:8px 0 0;}
+		.ref-container {position:relative; width:90%; margin:7px auto; 
+			@include breakpoint (medium){width:600px; margin:10px auto;}
+			@include breakpoint (768px){width:770px; margin:10px auto;}
+		}
+
+		p {font-size:11px; line-height:13px; margin:6px 0 0; @include breakpoint(medium){font-size:13.5px; line-height:15.5px; margin:8px 0 0; }}
 
 
 	}

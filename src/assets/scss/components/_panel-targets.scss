@@ -3,14 +3,16 @@
 	margin-top:-23vh;
 	z-index:120;
 
-	@include breakpoint (medium){margin-top:-25vh;}
+	@include breakpoint (medium){margin-top:-24vh;}
+	@include breakpoint (768px){margin-top:-25vh;}
 
 	p {
-	font-size:15px;
+	font-size:14.5px;
 	font-style:italic;
 	color:#fff;
 
-	@include breakpoint (medium){font-size:18px;}
+	@include breakpoint (medium){font-size:16px;}
+	@include breakpoint (768px){font-size:18px;}
 	}
 }
 
@@ -31,14 +33,14 @@
 
 	thead {background-color:#81bc00; z-index:8400;border-collapse:collapse;
 	border:none;}
-	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:17px; line-height:20px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;
-		@include breakpoint (medium){font-size:20px; line-height:22px; padding:14px 4px 8px;}
+	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:16.5px; line-height:18px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;
+		@include breakpoint (medium){font-size:20px; line-height:22px;}
 	}
-	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:16px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:5px 4px 2px; overflow-x:scroll; white-space: nowrap;
-		@include breakpoint (medium){font-size:19px; padding:6px 4px 3px;}
+	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:15.5px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:7px 4px 4px; line-height:17px;
+		@include breakpoint (medium){font-size:19px; line-height:23px; padding:6px 4px 3px;}
 	}
 
-	td.abxAvoid {@include breakpoint (small only) {text-align:left; line-height:18px; overflow-x:visible; white-space: normal;}}
+	td.abxAvoid {@include breakpoint (small only) {text-align:left; line-height:18px; overflow-x:visible; padding:7px 8px 4px; white-space: normal;}}
 
 	td i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
 
