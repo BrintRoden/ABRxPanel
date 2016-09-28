@@ -1,26 +1,45 @@
 .panelTeeUp {
-	margin-top:-25vh;
+	position:relative;
+	margin-top:-23vh;
+	z-index:120;
+
+	@include breakpoint (medium){margin-top:-25vh;}
+
 	p {
-	font-size:18px;
+	font-size:15px;
 	font-style:italic;
 	color:#fff;
+
+	@include breakpoint (medium){font-size:18px;}
 	}
 }
+
+
 .panelTargets {
 	position: relative;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 
 	margin-top:-25vh;
 	z-index: 8000;
 	border-collapse:collapse;
 	border:none;
+
+	@include breakpoint (medium) {border-top-left-radius: 10px;
+	border-top-right-radius: 10px;}
 	
 
 	thead {background-color:#81bc00; z-index:8400;border-collapse:collapse;
 	border:none;}
-	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:20px; line-height:22px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;}
-	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:19px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:6px 4px 3px; overflow-x:scroll; white-space: nowrap;}
+	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:17px; line-height:20px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;
+		@include breakpoint (medium){font-size:20px; line-height:22px; padding:14px 4px 8px;}
+	}
+	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:16px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:5px 4px 2px; overflow-x:scroll; white-space: nowrap;
+		@include breakpoint (medium){font-size:19px; padding:6px 4px 3px;}
+	}
+
+	td.abxAvoid {@include breakpoint (small only) {text-align:left; line-height:18px; overflow-x:visible; white-space: normal;}}
+
 	td i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
 
 	.enzymeClass {vertical-align:top; font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; font-weight:bold;}
@@ -29,8 +48,12 @@
 
 }
 
-.class {border-top-left-radius: 10px;}
-.avoidance {border-top-right-radius: 10px;}
+.class {border-top-left-radius: 4px;
+		@include breakpoint (medium){border-top-left-radius: 10px;}
+	}
+.avoidance {border-top-right-radius: 4px;
+		@include breakpoint (medium){border-top-right-radius: 10px;}
+	}
 
 
 

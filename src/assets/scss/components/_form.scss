@@ -2,10 +2,38 @@
 /*  --  form styles  ------*/
 
 
-#form28 {background:#f7f8f9; padding:5%; border-radius:4px; margin-bottom:36px;}
+#form28 { margin-bottom:36px;}
+.requestBckgrnd {background:#f7f8f9; padding:5%; border-radius:4px;}
 
+.field { border:solid 0.5px #aaa; height:34px; @include breakpoint (medium){height:50px;}}
+label {font-size:16px; @include breakpoint (medium){font-size:18px;}}
 
-.field { border:solid 0.5px #aaa; height:50px;}
-label {font-size:18px; }
+.choice {font-size:14px; @include breakpoint (400px){font-size:14px; line-height:32px;} @include breakpoint (710px){font-size:16px; line-height:30px;}}
+
+.messageD {margin-top:14px;}
 
 .req {color:#81bc00; font-weight:bold; font-size:18px; line-height:12px;}
+
+.interestIndicater {
+	input {float:left; margin:-10px 0;}
+	label {float:left; margin:0 0 0 12px;}
+}
+
+#saveForm {
+	background:#81bc00; 
+	margin:26px auto;  
+	padding:12px 18px 9px; 
+	color:#fff; 
+	border:none;
+	width:100%;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	border-radius:4px;
+
+}
+
+
+#saveForm:hover, #saveForm:active {background:#6fa300;}
+
+

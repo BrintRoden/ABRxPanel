@@ -12,10 +12,18 @@
 
 .card {
 	position: relative;
+	float:left;
+	margin: 0 0 24px 13%;
 	border: solid 0.5px #8ba5ac;
-	width:30.66%;
-	margin: 0 1.33%;
+	width:300px;
+	padding:0 14px 20px;
 	background:#fff;
+
+	@include breakpoint (420px) {margin: 0 0 24px 20%;}
+	@include breakpoint (530px) {margin: 0 0 24px 26.4%;}
+	@include breakpoint (640px) {margin: 0 0 24px 29%;}
+		@include breakpoint (720px) {margin: 0 0 24px 32%;}
+	@include breakpoint (840px) {width:30.66%;margin: 0 1.33%;}
 
 }
 
@@ -57,6 +65,7 @@
 
 
 .techResource {
+	padding-bottom:12px;
 
 	.techTitle {
 		float: left;
@@ -79,7 +88,7 @@
 
 	p {margin:0 4px 14px; font-size:16px; line-height:23px;}
 
-	img { display:block; margin:4px auto 12px; box-shadow:0 1px 2px #444;}
+	img { display:block; margin:4px auto 24px; box-shadow:0 1px 2px #444;}
 
 }
 
@@ -89,11 +98,16 @@
 		text-align:center;
 
 		.explainer {
-			margin-bottom:20px;
-			font-size: 20px;
-			line-height: 25px;
+			margin-bottom:26px;
+			font-size: 16px;
+			line-height: 21px;
 			font-style:italic;
 			color:#65787d;
+
+
+			@include breakpoint (medium) {margin-bottom:20px;
+			font-size: 20px;
+			line-height: 25px;}
 		}
 
 		.visit-btn {
@@ -103,15 +117,18 @@
 			background:#65787d;
 			border-radius:4px;
 			padding:14px 34px 11px;
-			margin: 20px 0 30px;
+			margin: 30px 0 30px;
+			@include breakpoint (medium){margin:20px 0 30px;}
 		}
 
 		.visit-btn:hover {background:#55686d;}
 
 		.txt-lrn {
-			margin:20px 0 0;
+			margin:12px 0 0;
 			font-style:italic;
 			color:#65787d;
+			@include breakpoint (medium){margin:20px 0 0;}
+
 		}
 
 	}

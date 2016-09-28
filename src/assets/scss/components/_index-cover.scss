@@ -1,89 +1,138 @@
 
 .cover-back-wrap {
+	background: url('../../assets/img/stadium-background.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: relative;
 
 	width: 100%; 
   	height: 94vh;
-  		background: url('../../assets/img/stadium-background.jpg') no-repeat center center;
-	background-size: cover;
-	background-attachment: relative;
-	z-index: 0;
+  	
 
 }
 
 .fb-player {
 	position:absolute;
-	  		width:60vh;
-	  		height:74vh;
-	  		margin:24vh 0 0 52vw;
-	  		z-index: 0;
+	z-index: 1;
+	width:60vh;
+	height:74vh;
+	margin:24vh 0 0 52vw;
 
-	  		img {
-	  			height:73vh;
-	  			z-index: 0;
-	  		}
+	@include breakpoint (medium){
+	width:60vh;
+	height:74vh;
+	margin:24vh 0 0 52vw;
+	}
+
+	img {
+	 z-index: 0! important;
+
+	 height:73vh;
+	 
+	}
 }
 
-.cover-head-title-position {margin:10vh 0 0; width:100%;}
+.cover-head-title-position {margin:10vh 0 0;  width:100%;}
 
   	#cover-header {
   		font-family: "Myriad Pro", sans-serif;
   		font-weight: bold;
 		float:left;
-		padding-left:2vw;
-		font-size: 6.5vw;
+		padding-left:0;
+		margin-left:8%;
+		font-size: 9.5vw;
 		color: #81bc00;
 		letter-spacing:-0.02em;
 		text-shadow:0 2px 6px rgba(0,0,0,0.3);
 		z-index:100;
-		opacity:0;
+		opacity:1;
+
+		@include breakpoint (medium){padding-left:2vw; margin-left:100px; font-size: 6.5vw;}
 
 		span {font-weight:normal;}
+
+
 	}
 
 	#cover-name-detail {
 		position: absolute;
 		font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif;
 		font-style: italic;
-		font-size: 3.8vw;
+		font-size: 5.2vw;
 		float:left;
-		margin:2vw 0 0 26vw;
-		padding:0.8vw 30px 0 80px;
+		margin:3.1vw 0 0 32vw;
+		padding:2vw 16px 1vw 40px;
 		line-height: 3.9vw;
-		border-top-right-radius:6px;
-		border-bottom-right-radius:6px;
+		border-top-right-radius:3px;
+		border-bottom-right-radius:3px;
 		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjdkZjVlIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjYjdkZjVlIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjYjdkZjVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjYjdkZjVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FmZGE1MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
 		background: -moz-linear-gradient(-45deg,  rgba(183,223,94,0) 0%, rgba(183,223,94,0) 10%, rgba(183,223,94,1) 27%, rgba(183,223,94,1) 51%, rgba(175,218,83,1) 100%);
 		background: -webkit-linear-gradient(-45deg,  rgba(183,223,94,0) 0%,rgba(183,223,94,0) 10%,rgba(183,223,94,1) 27%,rgba(183,223,94,1) 51%,rgba(175,218,83,1) 100%);
 		background: linear-gradient(135deg,  rgba(183,223,94,0) 0%,rgba(183,223,94,0) 10%,rgba(183,223,94,1) 27%,rgba(183,223,94,1) 51%,rgba(175,218,83,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7df5e', endColorstr='#afda53',GradientType=1 );
+	
+		@include breakpoint (medium){
+			font-size: 3.8vw; 
+			margin:2vw 0 0 26vw;
+			padding:0.8vw 30px 0 80px;
+			line-height: 3.9vw;
+			border-top-right-radius:6px;
+			border-bottom-right-radius:6px;
+		}
 
 	}
 
 	h3 {
+		position: relative;
 		font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif;
-					//	font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif;
-	//font-family: "Myriad Pro", sans-serif;
-
-		margin:6vh 0 0;
-		padding-left:6vw;
-		font-size: 4.6vh;
+		margin:5.5vh 0 0;
+		padding-left:0;
+		margin-left:8%;
+		font-size: 22px;
 		line-height: 1.2em;
 		color: #fff;
 		text-shadow:0 2px 3px rgba(0,0,0,0.4);
 		z-index:100;
-		opacity:0;
+		opacity:1;
+
+		@include breakpoint (medium){
+			margin:6vh 0 0;
+			padding-left:6vw;
+			font-size: 4.6vh;
+			line-height: 1.2em;
+		}
 
 		i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
 	}
 
 
 	.targetPlug {
-		margin:9.5vh 0 0 6vw;
+		margin:6.5vh 0 0 8%;
 		color:#fff;
 
-		img {height:56px; float:right;}
+		@include breakpoint (medium){margin:9.5vh 0 0 6vw;}
 
-		p {font-size:20px; line-height:24px; font-style:italic; text-shadow:0 1px 2px #333; margin-top:6px;}
+		.magnifier-img {@include breakpoint (small only){width:44px; margin:7% 0 0 6%;}}
+
+		img.magnifier {height:56px; float:right;}
+
+		p {
+			position:relative;
+			font-size:15px; 
+			line-height:19px; 
+			font-style:italic; 
+			text-shadow:0 1px 2px #333; 
+			margin-top:6px;
+			margin-left:0;
+			width:190px;
+			z-index: 120;
+
+			@include breakpoint (medium){
+				font-size:20px; 
+				line-height:24px;
+				width:auto;
+			}
+		}
+
 
 	}
 

@@ -26,7 +26,7 @@
     <script src="js/foundation/foundation.core.js"></script>
 
   -->
-  
+
     <!-- Other JS plugins can be included here -->
 
     <script>
@@ -38,7 +38,22 @@
 
     <script type="text/javascript">
 
+
+      $(document).ready(function(){
+
+        $(".menuClose").click(function(){
+          $(".off-canvas-wrapper-inner").removeClass("is-open-right");
+          $(".off-canvas-wrapper-inner").removeClass("is-off-canvas-open");
+          $(".off-canvas").removeClass("is-open");
+          $(".js-off-canvas-exit").removeClass("is-visible");
+          $(".js-off-canvas-exit").removeClass("js-off-canvas-exit");
+        });
+      });
+
+/*
       window.onload = function() {
+
+
 
         TweenMax.to("#cover-header", 0.8, {opacity:1, marginLeft:"100px", delay:0.3, ease:Power2.easeOut});
         TweenMax.to("#cover-subhead", 0.8, {opacity:1, marginLeft:"100px", delay:0.4, ease:Power2.easeOut});
@@ -46,7 +61,7 @@
         TweenMax.fromTo(".svgDownArrow", 0.7, {bottom:"10%"}, {bottom:"9%", ease:Power1.easeInOut, repeat:-1, delay:7, yoyo:true});
 
       };
-
+*/
     </script>
 
   </body>
