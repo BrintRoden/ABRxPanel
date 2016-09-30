@@ -1,5 +1,19 @@
 
 
+.off-canvas.position-right {
+    right: -250px;
+    top: 0;
+    width: 250px; 
+}
+
+    .is-open-right {
+      -ms-transform: translateX(-250px);
+      -webkit-transform: translateX(-250px);
+          transform: translateX(-250px); 
+      }
+
+
+
 .off-canvas {
 	position:absolute; 
 	z-index:9; 
@@ -20,7 +34,7 @@
 
 
 
-.top-bar {position: fixed; top:0; width:100%; background:rgba(255,255,255,0.96); padding:0; border-bottom: 0.5px solid rgba(0,0,0,0.25); z-index:9999;}
+.top-bar {position: absolute; max-height:48px; top:0; width:100%; background:rgba(255,255,255,0.96); padding:0; border-bottom: 1px solid rgba(0,0,0,0.25); z-index:9999;}
 
 .topTitle { 
 	margin:4px 0 0 5vw; 
@@ -73,7 +87,7 @@
 
 
 	h2.sectionHead {
-		font-family: "Myriad Pro", sans-serif;
+		font-family: "myriad-pro", sans-serif;
   		font-weight: bold;
   		font-style: italic;
   		letter-spacing:-0.025em;
@@ -93,7 +107,7 @@
   		}
 	}
 
-	.topline {border-top:solid 0.5px #333; margin-top:30px; @include breakpoint (medium){margin-top:70px;}}
+	.topline {border-top:solid 1px #333; margin-top:30px; @include breakpoint (medium){margin-top:70px;}}
 
 	h2.sectionHead.white {background-color:#fff;}
 	h2.sectionHead.devBy {

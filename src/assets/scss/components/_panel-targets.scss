@@ -36,7 +36,8 @@
 	th {font-family: "MYRIADPRO-BOLDCOND", "myriad-pro-condensed", sans-serif; text-transform:uppercase; font-size:16.5px; line-height:18px; text-align:center; vertical-align:middle; text-shadow:0 1px #619c00; padding:14px 4px 8px; color:#fff;
 		@include breakpoint (medium){font-size:20px; line-height:22px;}
 	}
-	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:15.5px; text-align:center; vertical-align:middle; border: 0.5px solid #ccc; padding:7px 4px 4px; line-height:17px;
+	td {font-family: "MYRIADPRO-COND", "myriad-pro-condensed", sans serif; font-size:14px; text-align:center; vertical-align:middle; border: 1px solid #ccc; padding:7px 4px 4px; line-height:16px;
+		@include breakpoint (460px){font-size:15.5px; line-height:17px; padding:7px 4px 4px;}
 		@include breakpoint (medium){font-size:19px; line-height:23px; padding:6px 4px 3px;}
 	}
 

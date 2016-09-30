@@ -13,12 +13,13 @@
 .card {
 	position: relative;
 	float:left;
-	margin: 0 0 24px 13%;
-	border: solid 0.5px #8ba5ac;
+	margin: 0 0 24px 8%;
+	border: solid 1px #8ba5ac;
 	width:300px;
 	padding:0 14px 20px;
 	background:#fff;
 
+	@include breakpoint (360px) {margin: 0 0 24px 13%;}
 	@include breakpoint (420px) {margin: 0 0 24px 20%;}
 	@include breakpoint (530px) {margin: 0 0 24px 26.4%;}
 	@include breakpoint (640px) {margin: 0 0 24px 29%;}
@@ -29,7 +30,7 @@
 
 
 .benefit {
-	font-family: "Myriad Pro", sans-serif;
+	font-family: "myriad-pro", sans-serif;
 
 	.cardTitle {
 		float: left;
