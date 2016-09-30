@@ -39,7 +39,7 @@
 	}
 }
 
-.cover-head-title-position {margin:10vh 0 0;  width:100%;}
+.cover-head-title-position {margin:10vh 0 0;  width:100%; @include breakpoint (1220px){margin-left:5vw;}}
 
   	#cover-header {
   		font-family: "myriad-pro", sans-serif;
@@ -124,6 +124,11 @@
 			font-size: 4.6vh;
 		}
 
+		@include breakpoint (1220px){
+			padding-left:9vw;
+	
+		}
+
 		i {font-family: "MYRIADPRO-CONDIT", "myriad-pro-condensed", sans serif; font-style:italic;}
 	}
 
@@ -135,6 +140,8 @@
 		@include breakpoint (500px){margin:9vh 0 0 6vw;}
 		@include breakpoint (medium){margin:8vh 0 0 6vw;}
 		@include breakpoint (768px){margin:9.5vh 0 0 6vw;}
+		@include breakpoint (1060px){margin:6vh 0 0 6vw;}
+		@include breakpoint (1220px){margin:4.5vh 0 0 6vw; padding-left:6vw;}
 
 		.magnifier-img {@include breakpoint (small only){width:44px; margin:7% 0 0 6%;}
 			@include breakpoint (500px){width:54px; margin:5% 0 0 7%;}
